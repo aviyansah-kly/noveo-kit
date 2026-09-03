@@ -78,3 +78,5 @@
 .contact-form h2{font:800 clamp(32px,3.4vw,46px)/1.04 'Plus Jakarta Sans',sans-serif;letter-spacing:-.04em;margin-bottom:14px}
 .contact-form>p{font-size:15px;line-height:1.65;color:var(--muted);margin-bottom:28px}
 @media(max-width:980px){.contact-layout{grid-template-columns:1fr}.contact-copy{position:static}}
+
+.section-link-row{margin-top:28px}
