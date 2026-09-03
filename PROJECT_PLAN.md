@@ -7,7 +7,7 @@
 - [x] Services — `services.html` — built and passed buyer + reviewer QA.
 - [x] Service Detail — `service-detail.html` — Fractional CFO detail template built and passed buyer + reviewer QA.
 - [x] Industries — `industries.html` — built and passed buyer + reviewer QA.
-- [ ] Case Studies — `case-studies.html`.
+- [x] Case Studies — `case-studies.html` — built and passed buyer + reviewer QA.
 - [ ] Case Study Detail — `case-study-detail.html`.
 - [ ] Engagement / Pricing — `engagement.html`.
 - [ ] Insights — `insights.html`.
@@ -78,3 +78,8 @@ Do not declare the kit complete until all pages exist, share the same design sys
 ### Industries
 - Buyer pass: clearly differentiated content by SaaS, agency/professional services, e-commerce, founder-led, and multi-model businesses; strong decision-oriented positioning, credible finance questions, and clear CTA paths.
 - Reviewer pass: shared design system and JS, semantic headings/sections, minimum 14px type, SVG-only icons, consistent motion/marker behavior, responsive reusable grids, strong contrast, and Elementor-friendly structure.
+
+
+### Case Studies
+- Buyer pass: credible, decision-led case study index across SaaS, agency, e-commerce, and professional-services use cases; outcomes are framed as illustrative rather than guaranteed.
+- Reviewer pass: reusable shared components, responsive service-row/card patterns, minimum 14px type, SVG-only icons, consistent motion/marker behavior, clear internal linking, and no placeholder-looking content.
