@@ -8,7 +8,7 @@
 - [x] Service Detail — `service-detail.html` — Fractional CFO detail template built and passed buyer + reviewer QA.
 - [x] Industries — `industries.html` — built and passed buyer + reviewer QA.
 - [x] Case Studies — `case-studies.html` — built and passed buyer + reviewer QA.
-- [ ] Case Study Detail — `case-study-detail.html`.
+- [x] Case Study Detail — `case-study-detail.html` — built and passed buyer + reviewer QA.
 - [ ] Engagement / Pricing — `engagement.html`.
 - [ ] Insights — `insights.html`.
 - [ ] Insight / Article Detail — `article.html`.
@@ -83,3 +83,8 @@ Do not declare the kit complete until all pages exist, share the same design sys
 ### Case Studies
 - Buyer pass: credible, decision-led case study index across SaaS, agency, e-commerce, and professional-services use cases; outcomes are framed as illustrative rather than guaranteed.
 - Reviewer pass: reusable shared components, responsive service-row/card patterns, minimum 14px type, SVG-only icons, consistent motion/marker behavior, clear internal linking, and no placeholder-looking content.
+
+
+### Case Study Detail
+- Buyer pass: clear narrative arc from context to challenge, work, outcome, operational change, and related services; credible disclaimer avoids implying guaranteed financial outcomes.
+- Reviewer pass: consistent shared components, responsive long-form sections, reusable detail-page structure, minimum 14px type, accessible SVG-only icons, strong contrast, motion consistency, and coherent internal linking.
