@@ -52,3 +52,14 @@
 .article-aside a{font-size:14px;font-weight:700}
 .article-aside p{font-size:14px;line-height:1.6;color:var(--muted);margin:0}
 @media(max-width:980px){.article-shell{grid-template-columns:1fr}.article-aside{position:static}.article-body{max-width:none}}
+
+
+/* FAQ */
+.faq-list{border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:24px 0;font:700 24px/1.15 'Plus Jakarta Sans',sans-serif;cursor:pointer}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:after{content:'+';font:500 28px/1 'Plus Jakarta Sans',sans-serif;flex:none}
+.faq-item[open] summary:after{content:'−'}
+.faq-answer{max-width:860px;padding:0 0 26px;color:var(--muted);font-size:16px;line-height:1.7}
+@media(max-width:700px){.faq-item summary{font-size:21px}}
