@@ -14,7 +14,7 @@
 - [x] Insight / Article Detail — `article.html` — built and passed buyer + reviewer QA.
 - [x] FAQ — `faq.html` — built and passed buyer + reviewer QA.
 - [x] Contact — `contact.html` — built and passed buyer + reviewer QA.
-- [ ] 404 — `404.html`.
+- [x] 404 — `404.html` — built and passed buyer + reviewer QA.
 - [ ] Final cross-page buyer + ThemeForest-reviewer QA.
 
 ## Locked homepage baseline
@@ -113,3 +113,8 @@ Do not declare the kit complete until all pages exist, share the same design sys
 ### Contact
 - Buyer pass: clear discovery expectations, practical fit guidance, comprehensive inquiry form, and FAQ handoff; form asks only information useful to scope an advisory conversation.
 - Reviewer pass: shared form components, minimum 14px type, accessible labels/selects/textarea, no inline styling, SVG-only icons, responsive two-column layout, clear focus states, and demo-safe form behavior.
+
+
+### 404
+- Buyer pass: concise branded recovery experience with clear routes back to Home, Services, and Contact.
+- Reviewer pass: responsive reusable error layout, minimum 14px supporting copy, SVG-only directional icon, accessible navigation, shared assets, and no unnecessary scripts or placeholder content.
