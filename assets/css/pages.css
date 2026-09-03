@@ -28,3 +28,10 @@
 
 @media(max-width:980px){.page-hero-grid,.split-story{grid-template-columns:1fr}.page-hero-note{max-width:620px}.split-story .sticky{position:static}.value-grid,.team-grid{grid-template-columns:1fr 1fr}.service-row{grid-template-columns:72px 1fr}.service-row>a{grid-column:2}.timeline-row{grid-template-columns:80px 1fr}.timeline-row p{grid-column:2}.logo-strip{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:700px){.page-hero{padding-top:62px}.page-hero-media,.page-hero-media img{min-height:350px}.value-grid,.team-grid,.feature-list{grid-template-columns:1fr}.team-card img{height:340px}.service-row{grid-template-columns:1fr;padding:26px}.service-row>a{grid-column:auto}.timeline-row{grid-template-columns:1fr;gap:12px}.timeline-row p{grid-column:auto}.logo-strip{grid-template-columns:1fr 1fr}.logo-strip span{min-height:86px}.cta-panel h2{font-size:48px}}
+
+
+/* Insights */
+.insight-feature blockquote{margin:22px 0 18px}
+.insight-feature>p{font-size:16px;line-height:1.7;color:#555550}
+.insight-feature .insight-action{margin-top:auto}
+.newsletter-wide{max-width:520px}
