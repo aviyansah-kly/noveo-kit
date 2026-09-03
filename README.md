@@ -5,9 +5,9 @@ NOVEO is a premium, Elementor-friendly website/template-kit prototype for fracti
 ## Status
 - Home: approved and visually locked.
 - Shared design-system foundation: created.
-- Remaining pages: in progress per `PROJECT_PLAN.md`.
+- All 13 release pages: complete.\n- Final cross-page buyer + ThemeForest-reviewer QA: complete.
 
-## Shared assets
+## Shared assets\n- `assets/css/home.css` — locked homepage-specific styles extracted from `index.html` with no visual redesign.\n- `assets/js/home.js` — locked homepage interactions extracted from `index.html`.
 - `assets/css/design-system.css` — color/spacing/radius tokens, typography, layout primitives, header, announcement rotator, buttons, markers, cards, forms, footer, shared responsive and reduced-motion rules.
 - `assets/css/pages.css` — reusable page compositions such as inner-page hero, story split, values, team, timeline, service rows, feature cards, CTA panels.
 - `assets/js/main.js` — shared reveal animation, viewport marker wipe, rotating announcement messages, reduced-motion handling, and demo-form prevention.
@@ -54,3 +54,31 @@ Layout: full-width section shell → `.wrap` inner container (max 1240px) → si
 
 ## Per-page release review
 Before marking a page complete: review once as a prospective buyer, once as a ThemeForest reviewer, fix issues, then review again. Final release also requires a cross-page consistency pass.
+
+
+## Page inventory
+- Home — `index.html`
+- About — `about.html`
+- Services — `services.html`
+- Service Detail — `service-detail.html`
+- Industries — `industries.html`
+- Case Studies — `case-studies.html`
+- Case Study Detail — `case-study-detail.html`
+- Engagement / Pricing — `engagement.html`
+- Insights — `insights.html`
+- Article Detail — `article.html`
+- FAQ — `faq.html`
+- Contact — `contact.html`
+- 404 — `404.html`
+
+## Final cross-page QA
+- Desktop visual baseline preserved for the approved homepage.
+- Shared design system powers all inner pages.
+- Homepage CSS/JS extracted to dedicated assets to keep approved visuals stable while cleaning code.
+- Mobile navigation is available across every page.
+- Dark-section contrast safeguards added for FAQ, timeline, and feature-card content.
+- Internal local links checked against the page inventory.
+- No supporting font sizes below 14px found.
+- No emoji/text-glyph arrows used; directional controls use SVG.
+- Non-home pages contain no inline presentation styles.
+- Forms use explicit labels or accessible labels and demo-safe submit behavior.
