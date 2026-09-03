@@ -1,5 +1,22 @@
 # NOVEO Template Kit — Locked Baseline & Build Plan
 
+## Build status
+- [x] Home — `index.html` — APPROVED / visually locked.
+- [~] Shared reusable foundation — core CSS/JS assets and documentation created; homepage migration to external assets remains pending a no-visual-change verification pass.
+- [ ] About — `about.html`.
+- [ ] Services — `services.html`.
+- [ ] Service Detail — `service-detail.html`.
+- [ ] Industries — `industries.html`.
+- [ ] Case Studies — `case-studies.html`.
+- [ ] Case Study Detail — `case-study-detail.html`.
+- [ ] Engagement / Pricing — `engagement.html`.
+- [ ] Insights — `insights.html`.
+- [ ] Insight / Article Detail — `article.html`.
+- [ ] FAQ — `faq.html`.
+- [ ] Contact — `contact.html`.
+- [ ] 404 — `404.html`.
+- [ ] Final cross-page buyer + ThemeForest-reviewer QA.
+
 ## Locked homepage baseline
 The current `index.html` on `main` is APPROVED and visually locked. Preserve its layout, typography, color direction, spacing character, highlight behavior, button treatment, motion language, header, announcement bar, proof row, cards, testimonial, process section, CTA, and footer. Only change the homepage if a verified usability, accessibility, responsive, or implementation bug requires it.
 
