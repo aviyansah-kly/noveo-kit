@@ -13,7 +13,7 @@
 - [x] Insights — `insights.html` — built and passed buyer + reviewer QA.
 - [x] Insight / Article Detail — `article.html` — built and passed buyer + reviewer QA.
 - [x] FAQ — `faq.html` — built and passed buyer + reviewer QA.
-- [ ] Contact — `contact.html`.
+- [x] Contact — `contact.html` — built and passed buyer + reviewer QA.
 - [ ] 404 — `404.html`.
 - [ ] Final cross-page buyer + ThemeForest-reviewer QA.
 
@@ -108,3 +108,8 @@ Do not declare the kit complete until all pages exist, share the same design sys
 ### FAQ
 - Buyer pass: answers cover fit, scope, working cadence, systems, pricing, outcomes, and engagement flexibility with credible advisory language.
 - Reviewer pass: accessible native details/summary accordions, minimum 14px type, reusable FAQ styles, strong dark/light contrast, SVG-only CTA icon, consistent motion, and no inline styling.
+
+
+### Contact
+- Buyer pass: clear discovery expectations, practical fit guidance, comprehensive inquiry form, and FAQ handoff; form asks only information useful to scope an advisory conversation.
+- Reviewer pass: shared form components, minimum 14px type, accessible labels/selects/textarea, no inline styling, SVG-only icons, responsive two-column layout, clear focus states, and demo-safe form behavior.
