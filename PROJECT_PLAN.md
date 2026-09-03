@@ -1,129 +1,57 @@
-# NOVEO Template Kit — Locked Baseline & Build Plan
+# NOVEO Template Kit — Final Release Baseline
 
 ## Build status
 - [x] Home — `index.html` — APPROVED / visually locked.
-- [x] Shared reusable foundation — design system, page compositions, shared JS, locked-home CSS/JS extraction, and documentation complete.
-- [x] About — `about.html` — built and passed buyer + reviewer QA.
-- [x] Services — `services.html` — built and passed buyer + reviewer QA.
-- [x] Service Detail — `service-detail.html` — Fractional CFO detail template built and passed buyer + reviewer QA.
-- [x] Industries — `industries.html` — built and passed buyer + reviewer QA.
-- [x] Case Studies — `case-studies.html` — built and passed buyer + reviewer QA.
-- [x] Case Study Detail — `case-study-detail.html` — built and passed buyer + reviewer QA.
-- [x] Engagement / Pricing — `engagement.html` — built and passed buyer + reviewer QA.
-- [x] Insights — `insights.html` — built and passed buyer + reviewer QA.
-- [x] Insight / Article Detail — `article.html` — built and passed buyer + reviewer QA.
-- [x] FAQ — `faq.html` — built and passed buyer + reviewer QA.
-- [x] Contact — `contact.html` — built and passed buyer + reviewer QA.
-- [x] 404 — `404.html` — built and passed buyer + reviewer QA.
-- [x] Final cross-page buyer + ThemeForest-reviewer QA — passed after navigation, contrast, links, typography, responsive structure, and code-cleanliness fixes.
+- [x] Shared reusable foundation — design system, shared page CSS/JS, mobile navigation, and documentation complete.
+- [x] About — `about.html`.
+- [x] Services — `services.html`.
+- [x] Service Detail — `service-detail.html`.
+- [x] Industries — `industries.html`.
+- [x] Case Studies — `case-studies.html`.
+- [x] Case Study Detail — `case-study-detail.html`.
+- [x] Engagement / Pricing — `engagement.html`.
+- [x] Insights — `insights.html`.
+- [x] Insight / Article Detail — `article.html`.
+- [x] FAQ — `faq.html`.
+- [x] Contact — `contact.html`.
+- [x] 404 — `404.html`.
+- [x] Privacy support page — `privacy.html`.
+- [x] Terms support page — `terms.html`.
+- [x] Final cross-page buyer + ThemeForest-reviewer QA.
 
 ## Locked homepage baseline
-The current `index.html` on `main` is APPROVED and visually locked. Preserve its layout, typography, color direction, spacing character, highlight behavior, button treatment, motion language, header, announcement bar, proof row, cards, testimonial, process section, CTA, and footer. Only change the homepage if a verified usability, accessibility, responsive, or implementation bug requires it.
+The approved homepage remains the visual source of truth. Preserve its typography, palette, spacing character, marker treatment, cards, buttons, motion, testimonial, process, CTA, and footer. Only verified implementation, accessibility, responsiveness, or broken-link issues justify changes.
 
 ## Product positioning
 NOVEO is a premium Fractional CFO & Financial Advisory template aimed at founders, startups, agencies, professional-services firms, SaaS businesses, e-commerce companies, finance consultants, fractional CFOs, and boutique advisory firms.
 
-## Design-system rules
-- Full-width section backgrounds/dividers with content aligned to a shared max-width container.
-- Minimum readable text size: 14px.
-- Reuse the approved homepage color palette, typography, radii, button variants, labels, cards, form fields, highlight marker, reveal motion, and spacing rhythm.
-- No emoji icons. Use inline SVG or CSS shapes only.
-- Keep motion subtle and purposeful; support `prefers-reduced-motion`.
-- Maintain strong contrast for all buttons, links, forms, dark sections, and hover/focus states.
-- Keep layouts Elementor-friendly: full-width parent section → constrained inner container → simple grid/flex nested containers.
-- Avoid unnecessary nested markup and one-off CSS when a reusable component/token can be used.
-- Copy must sound credible for a real finance/advisory business, not generic lorem ipsum or exaggerated claims.
+## Final design-system rules
+- Full-width section backgrounds/dividers with content aligned to the shared max-width container.
+- Minimum readable supporting text: 14px.
+- Reuse the approved palette, typography, radii, button variants, cards, forms, marker treatment, reveal motion, header/footer, and responsive rules.
+- No emoji directional icons; SVG/CSS only.
+- Maintain visible focus states and reduced-motion support.
+- Keep layouts Elementor-friendly: full-width parent section → constrained inner container → simple grid/flex children.
+- Copy must sound credible for a real finance/advisory business, not generic filler or exaggerated guarantees.
 
-## Required pages
-1. Home — `index.html` — LOCKED / approved.
-2. About — `about.html`.
-3. Services — `services.html`.
-4. Service Detail — `service-detail.html` (reusable detail template for Fractional CFO / Forecasting / Capital Strategy / Finance Operations).
-5. Industries — `industries.html`.
-6. Case Studies — `case-studies.html`.
-7. Case Study Detail — `case-study-detail.html`.
-8. Engagement / Pricing — `engagement.html` (transparent engagement models without unrealistic fixed promises).
-9. Insights — `insights.html`.
-10. Insight / Article Detail — `article.html`.
-11. FAQ — `faq.html`.
-12. Contact — `contact.html`.
-13. 404 — `404.html`.
+## Final buyer QA
+- Complete conversion journey: positioning, services, industry fit, proof, engagement models, insights, objections, inquiry, and error recovery.
+- Content is specific to Fractional CFO / finance advisory.
+- Case-study outcomes are clearly illustrative rather than guaranteed.
+- Engagement/pricing language avoids unrealistic promises.
+- Privacy and Terms starter pages remove unfinished legal-footer dead ends while clearly instructing buyers to obtain legal review before publishing.
 
-## Shared reusable foundation
-Create and maintain:
-- `assets/css/design-system.css` — tokens, typography, layout, buttons, forms, cards, markers, shared responsive rules.
-- `assets/css/pages.css` — page-specific compositions only when not reasonably reusable.
-- `assets/js/main.js` — announcement rotator, reveal animation, marker animation, navigation behavior, shared interactions.
-- `README.md` — page inventory, component inventory, implementation notes, Elementor mapping guidance, image/source notes, and QA checklist.
+## Final ThemeForest-reviewer QA
+- Shared design system powers inner pages; approved homepage remains visually stable in dedicated home assets.
+- Responsive grids, long-form layouts, forms, FAQ accordions, mobile navigation, cards, CTA patterns, and legal pages are reusable.
+- No intended supporting typography below 14px.
+- Dark-section contrast safeguards exist for feature cards, timelines, FAQ content, and CTAs.
+- Directional controls use SVG rather than emoji/text arrows.
+- Forms use explicit or meaningful accessible labels and demo-safe submit behavior.
+- Mobile navigation can be closed by menu selection, resize, or Escape.
+- `prefers-reduced-motion` is supported by the shared system.
+- Footer legal destinations resolve to real support pages; shared JS normalizes legacy footer anchors at runtime.
+- Internal navigation routes point to existing release pages.
 
-Refactor the homepage to use the shared files only after verifying that doing so preserves the approved appearance and behavior.
-
-## QA loop for every page
-Before marking a page complete:
-1. Review as a prospective ThemeForest buyer: first impression, usefulness, completeness, credibility, visual polish, scanability, conversion path, and whether sections feel worth purchasing.
-2. Review as a ThemeForest reviewer: consistency, typography, spacing, responsive behavior, accessibility basics, contrast, form quality, navigation consistency, broken links/layout, content relevance, image quality, reusable structure, and code cleanliness.
-3. Fix all issues found.
-4. Re-review the page after fixes.
-5. Only then mark the page complete and move to the next one.
-
-## Completed-page QA notes
-### About
-- Buyer pass: strong positioning, trust metrics, clear story, principles, differentiation, leadership, growth-stage narrative, and conversion CTA; content is useful for a real advisory business rather than filler.
-- Reviewer pass: shared design-system assets, semantic sections/headings, descriptive image alt text, minimum 14px type, SVG-only directional icons, consistent header/footer, responsive grids, reduced-motion support, strong dark/light contrast, and Elementor-friendly section/container structure.
-
-## Final release gate
-Do not declare the kit complete until all pages exist, share the same design system, navigation between pages is coherent, responsive states are checked, minimum font-size rules are respected, no emoji arrows/icons remain, forms are visually stable, motion is consistent, and the entire kit has passed one final cross-page buyer + ThemeForest-reviewer audit.
-
-
-### Industries
-- Buyer pass: clearly differentiated content by SaaS, agency/professional services, e-commerce, founder-led, and multi-model businesses; strong decision-oriented positioning, credible finance questions, and clear CTA paths.
-- Reviewer pass: shared design system and JS, semantic headings/sections, minimum 14px type, SVG-only icons, consistent motion/marker behavior, responsive reusable grids, strong contrast, and Elementor-friendly structure.
-
-
-### Case Studies
-- Buyer pass: credible, decision-led case study index across SaaS, agency, e-commerce, and professional-services use cases; outcomes are framed as illustrative rather than guaranteed.
-- Reviewer pass: reusable shared components, responsive service-row/card patterns, minimum 14px type, SVG-only icons, consistent motion/marker behavior, clear internal linking, and no placeholder-looking content.
-
-
-### Case Study Detail
-- Buyer pass: clear narrative arc from context to challenge, work, outcome, operational change, and related services; credible disclaimer avoids implying guaranteed financial outcomes.
-- Reviewer pass: consistent shared components, responsive long-form sections, reusable detail-page structure, minimum 14px type, accessible SVG-only icons, strong contrast, motion consistency, and coherent internal linking.
-
-
-### Engagement / Pricing
-- Buyer pass: transparent engagement models explain project, ongoing advisory, and fractional CFO options without irresponsible fixed promises; scope drivers and commercial process are clear.
-- Reviewer pass: shared design system, minimum 14px type, responsive reusable cards/timeline, SVG-only icons, strong contrast, consistent motion, and clean CTA routing.
-
-
-### Insights
-- Buyer pass: practical founder-focused content architecture with featured article, topic coverage, credible read-time/category metadata, and newsletter CTA.
-- Reviewer pass: no inline styling, shared reusable components, article routing, minimum 14px type, SVG-only icons, responsive content grids, consistent motion, and clean semantic hierarchy.
-
-
-### Article Detail
-- Buyer pass: complete long-form finance article with useful founder guidance, scannable subheads, decision-focused examples, related-service CTA, and return path to Insights.
-- Reviewer pass: reusable article layout, no inline styles, minimum 14px type, responsive sticky aside, SVG-only icons, consistent motion, semantic long-form hierarchy, and clean internal links.
-
-
-### FAQ
-- Buyer pass: answers cover fit, scope, working cadence, systems, pricing, outcomes, and engagement flexibility with credible advisory language.
-- Reviewer pass: accessible native details/summary accordions, minimum 14px type, reusable FAQ styles, strong dark/light contrast, SVG-only CTA icon, consistent motion, and no inline styling.
-
-
-### Contact
-- Buyer pass: clear discovery expectations, practical fit guidance, comprehensive inquiry form, and FAQ handoff; form asks only information useful to scope an advisory conversation.
-- Reviewer pass: shared form components, minimum 14px type, accessible labels/selects/textarea, no inline styling, SVG-only icons, responsive two-column layout, clear focus states, and demo-safe form behavior.
-
-
-### 404
-- Buyer pass: concise branded recovery experience with clear routes back to Home, Services, and Contact.
-- Reviewer pass: responsive reusable error layout, minimum 14px supporting copy, SVG-only directional icon, accessible navigation, shared assets, and no unnecessary scripts or placeholder content.
-
-
-## Final QA summary
-- Completed final cross-page audit across all 13 release pages.
-- Preserved approved homepage desktop design while extracting its embedded CSS/JS to dedicated assets.
-- Added reusable mobile navigation across the entire kit.
-- Fixed dark-section contrast safeguards for feature cards, timelines, and FAQ answers/dividers.
-- Verified local page links resolve to existing release files; 404 remains intentionally unlinked as an error route.
-- Verified minimum supporting font size is 14px, no emoji/text-glyph arrows are used, non-home release pages have no inline presentation styles, and shared assets are present across all inner pages.
+## Release gate
+NOVEO is ready for user review. Future changes should be treated as review feedback, packaging/deployment polish, or optional content expansion—not unfinished core implementation.
