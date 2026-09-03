@@ -90,3 +90,13 @@
 .error-copy p{max-width:560px;font-size:17px;line-height:1.7;color:var(--muted);margin-bottom:28px}
 .error-actions{display:flex;flex-wrap:wrap;gap:14px}
 @media(max-width:800px){.error-grid{grid-template-columns:1fr}.error-code{font-size:clamp(110px,32vw,190px)}}
+
+
+/* Dark-section contrast safeguards */
+.feature-card.card-dark p{color:#c9c9c3}
+.section-dark .timeline{border-color:var(--line-dark)}
+.section-dark .timeline-row{border-color:var(--line-dark)}
+.section-dark .timeline-row p{color:var(--muted-dark)}
+.section-dark .faq-list{border-color:var(--line-dark)}
+.section-dark .faq-item{border-color:var(--line-dark)}
+.section-dark .faq-answer{color:var(--muted-dark)}
