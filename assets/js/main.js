@@ -60,4 +60,9 @@
     document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
   });
 
+  document.querySelectorAll('.foot-links a').forEach(link => {
+    const label = link.textContent.trim().toLowerCase();
+    if (label === 'privacy') link.setAttribute('href', 'privacy.html');
+    if (label === 'terms') link.setAttribute('href', 'terms.html');
+  });
 })();
