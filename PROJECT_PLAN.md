@@ -9,7 +9,7 @@
 - [x] Industries — `industries.html` — built and passed buyer + reviewer QA.
 - [x] Case Studies — `case-studies.html` — built and passed buyer + reviewer QA.
 - [x] Case Study Detail — `case-study-detail.html` — built and passed buyer + reviewer QA.
-- [ ] Engagement / Pricing — `engagement.html`.
+- [x] Engagement / Pricing — `engagement.html` — built and passed buyer + reviewer QA.
 - [ ] Insights — `insights.html`.
 - [ ] Insight / Article Detail — `article.html`.
 - [ ] FAQ — `faq.html`.
@@ -88,3 +88,8 @@ Do not declare the kit complete until all pages exist, share the same design sys
 ### Case Study Detail
 - Buyer pass: clear narrative arc from context to challenge, work, outcome, operational change, and related services; credible disclaimer avoids implying guaranteed financial outcomes.
 - Reviewer pass: consistent shared components, responsive long-form sections, reusable detail-page structure, minimum 14px type, accessible SVG-only icons, strong contrast, motion consistency, and coherent internal linking.
+
+
+### Engagement / Pricing
+- Buyer pass: transparent engagement models explain project, ongoing advisory, and fractional CFO options without irresponsible fixed promises; scope drivers and commercial process are clear.
+- Reviewer pass: shared design system, minimum 14px type, responsive reusable cards/timeline, SVG-only icons, strong contrast, consistent motion, and clean CTA routing.
