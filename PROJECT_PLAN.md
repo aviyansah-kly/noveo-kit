@@ -12,7 +12,7 @@
 - [x] Engagement / Pricing — `engagement.html` — built and passed buyer + reviewer QA.
 - [x] Insights — `insights.html` — built and passed buyer + reviewer QA.
 - [x] Insight / Article Detail — `article.html` — built and passed buyer + reviewer QA.
-- [ ] FAQ — `faq.html`.
+- [x] FAQ — `faq.html` — built and passed buyer + reviewer QA.
 - [ ] Contact — `contact.html`.
 - [ ] 404 — `404.html`.
 - [ ] Final cross-page buyer + ThemeForest-reviewer QA.
@@ -103,3 +103,8 @@ Do not declare the kit complete until all pages exist, share the same design sys
 ### Article Detail
 - Buyer pass: complete long-form finance article with useful founder guidance, scannable subheads, decision-focused examples, related-service CTA, and return path to Insights.
 - Reviewer pass: reusable article layout, no inline styles, minimum 14px type, responsive sticky aside, SVG-only icons, consistent motion, semantic long-form hierarchy, and clean internal links.
+
+
+### FAQ
+- Buyer pass: answers cover fit, scope, working cadence, systems, pricing, outcomes, and engagement flexibility with credible advisory language.
+- Reviewer pass: accessible native details/summary accordions, minimum 14px type, reusable FAQ styles, strong dark/light contrast, SVG-only CTA icon, consistent motion, and no inline styling.
