@@ -10,7 +10,7 @@
 - [x] Case Studies — `case-studies.html` — built and passed buyer + reviewer QA.
 - [x] Case Study Detail — `case-study-detail.html` — built and passed buyer + reviewer QA.
 - [x] Engagement / Pricing — `engagement.html` — built and passed buyer + reviewer QA.
-- [ ] Insights — `insights.html`.
+- [x] Insights — `insights.html` — built and passed buyer + reviewer QA.
 - [ ] Insight / Article Detail — `article.html`.
 - [ ] FAQ — `faq.html`.
 - [ ] Contact — `contact.html`.
@@ -93,3 +93,8 @@ Do not declare the kit complete until all pages exist, share the same design sys
 ### Engagement / Pricing
 - Buyer pass: transparent engagement models explain project, ongoing advisory, and fractional CFO options without irresponsible fixed promises; scope drivers and commercial process are clear.
 - Reviewer pass: shared design system, minimum 14px type, responsive reusable cards/timeline, SVG-only icons, strong contrast, consistent motion, and clean CTA routing.
+
+
+### Insights
+- Buyer pass: practical founder-focused content architecture with featured article, topic coverage, credible read-time/category metadata, and newsletter CTA.
+- Reviewer pass: no inline styling, shared reusable components, article routing, minimum 14px type, SVG-only icons, responsive content grids, consistent motion, and clean semantic hierarchy.
