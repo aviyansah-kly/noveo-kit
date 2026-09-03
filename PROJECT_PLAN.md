@@ -6,7 +6,7 @@
 - [x] About — `about.html` — built and passed buyer + reviewer QA.
 - [x] Services — `services.html` — built and passed buyer + reviewer QA.
 - [x] Service Detail — `service-detail.html` — Fractional CFO detail template built and passed buyer + reviewer QA.
-- [ ] Industries — `industries.html`.
+- [x] Industries — `industries.html` — built and passed buyer + reviewer QA.
 - [ ] Case Studies — `case-studies.html`.
 - [ ] Case Study Detail — `case-study-detail.html`.
 - [ ] Engagement / Pricing — `engagement.html`.
@@ -73,3 +73,8 @@ Before marking a page complete:
 
 ## Final release gate
 Do not declare the kit complete until all pages exist, share the same design system, navigation between pages is coherent, responsive states are checked, minimum font-size rules are respected, no emoji arrows/icons remain, forms are visually stable, motion is consistent, and the entire kit has passed one final cross-page buyer + ThemeForest-reviewer audit.
+
+
+### Industries
+- Buyer pass: clearly differentiated content by SaaS, agency/professional services, e-commerce, founder-led, and multi-model businesses; strong decision-oriented positioning, credible finance questions, and clear CTA paths.
+- Reviewer pass: shared design system and JS, semantic headings/sections, minimum 14px type, SVG-only icons, consistent motion/marker behavior, responsive reusable grids, strong contrast, and Elementor-friendly structure.
