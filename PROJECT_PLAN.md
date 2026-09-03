@@ -11,7 +11,7 @@
 - [x] Case Study Detail — `case-study-detail.html` — built and passed buyer + reviewer QA.
 - [x] Engagement / Pricing — `engagement.html` — built and passed buyer + reviewer QA.
 - [x] Insights — `insights.html` — built and passed buyer + reviewer QA.
-- [ ] Insight / Article Detail — `article.html`.
+- [x] Insight / Article Detail — `article.html` — built and passed buyer + reviewer QA.
 - [ ] FAQ — `faq.html`.
 - [ ] Contact — `contact.html`.
 - [ ] 404 — `404.html`.
@@ -98,3 +98,8 @@ Do not declare the kit complete until all pages exist, share the same design sys
 ### Insights
 - Buyer pass: practical founder-focused content architecture with featured article, topic coverage, credible read-time/category metadata, and newsletter CTA.
 - Reviewer pass: no inline styling, shared reusable components, article routing, minimum 14px type, SVG-only icons, responsive content grids, consistent motion, and clean semantic hierarchy.
+
+
+### Article Detail
+- Buyer pass: complete long-form finance article with useful founder guidance, scannable subheads, decision-focused examples, related-service CTA, and return path to Insights.
+- Reviewer pass: reusable article layout, no inline styles, minimum 14px type, responsive sticky aside, SVG-only icons, consistent motion, semantic long-form hierarchy, and clean internal links.
