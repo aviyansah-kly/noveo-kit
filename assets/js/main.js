@@ -45,4 +45,19 @@
   document.querySelectorAll('form[data-demo-form]').forEach(form => {
     form.addEventListener('submit', event => event.preventDefault());
   });
+
+  document.querySelectorAll('.mobile-nav-toggle').forEach(toggle => {
+    const header = toggle.closest('.header');
+    const menu = header?.querySelector('.mobile-menu');
+    if (!menu) return;
+    const closeMenu = () => { menu.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); };
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    window.addEventListener('resize', () => { if (window.innerWidth > 980) closeMenu(); });
+    document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
+  });
+
 })();
