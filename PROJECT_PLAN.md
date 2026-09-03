@@ -2,7 +2,7 @@
 
 ## Build status
 - [x] Home — `index.html` — APPROVED / visually locked.
-- [~] Shared reusable foundation — core CSS/JS assets and documentation created; homepage migration to external assets remains pending a no-visual-change verification pass.
+- [x] Shared reusable foundation — design system, page compositions, shared JS, locked-home CSS/JS extraction, and documentation complete.
 - [x] About — `about.html` — built and passed buyer + reviewer QA.
 - [x] Services — `services.html` — built and passed buyer + reviewer QA.
 - [x] Service Detail — `service-detail.html` — Fractional CFO detail template built and passed buyer + reviewer QA.
@@ -15,7 +15,7 @@
 - [x] FAQ — `faq.html` — built and passed buyer + reviewer QA.
 - [x] Contact — `contact.html` — built and passed buyer + reviewer QA.
 - [x] 404 — `404.html` — built and passed buyer + reviewer QA.
-- [ ] Final cross-page buyer + ThemeForest-reviewer QA.
+- [x] Final cross-page buyer + ThemeForest-reviewer QA — passed after navigation, contrast, links, typography, responsive structure, and code-cleanliness fixes.
 
 ## Locked homepage baseline
 The current `index.html` on `main` is APPROVED and visually locked. Preserve its layout, typography, color direction, spacing character, highlight behavior, button treatment, motion language, header, announcement bar, proof row, cards, testimonial, process section, CTA, and footer. Only change the homepage if a verified usability, accessibility, responsive, or implementation bug requires it.
@@ -118,3 +118,12 @@ Do not declare the kit complete until all pages exist, share the same design sys
 ### 404
 - Buyer pass: concise branded recovery experience with clear routes back to Home, Services, and Contact.
 - Reviewer pass: responsive reusable error layout, minimum 14px supporting copy, SVG-only directional icon, accessible navigation, shared assets, and no unnecessary scripts or placeholder content.
+
+
+## Final QA summary
+- Completed final cross-page audit across all 13 release pages.
+- Preserved approved homepage desktop design while extracting its embedded CSS/JS to dedicated assets.
+- Added reusable mobile navigation across the entire kit.
+- Fixed dark-section contrast safeguards for feature cards, timelines, and FAQ answers/dividers.
+- Verified local page links resolve to existing release files; 404 remains intentionally unlinked as an error route.
+- Verified minimum supporting font size is 14px, no emoji/text-glyph arrows are used, non-home release pages have no inline presentation styles, and shared assets are present across all inner pages.
