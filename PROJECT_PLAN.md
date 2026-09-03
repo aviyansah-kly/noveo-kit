@@ -4,8 +4,8 @@
 - [x] Home — `index.html` — APPROVED / visually locked.
 - [~] Shared reusable foundation — core CSS/JS assets and documentation created; homepage migration to external assets remains pending a no-visual-change verification pass.
 - [x] About — `about.html` — built and passed buyer + reviewer QA.
-- [ ] Services — `services.html`.
-- [ ] Service Detail — `service-detail.html`.
+- [x] Services — `services.html` — built and passed buyer + reviewer QA.
+- [x] Service Detail — `service-detail.html` — Fractional CFO detail template built and passed buyer + reviewer QA.
 - [ ] Industries — `industries.html`.
 - [ ] Case Studies — `case-studies.html`.
 - [ ] Case Study Detail — `case-study-detail.html`.
