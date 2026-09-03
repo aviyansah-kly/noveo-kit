@@ -3,7 +3,7 @@
 ## Build status
 - [x] Home — `index.html` — APPROVED / visually locked.
 - [~] Shared reusable foundation — core CSS/JS assets and documentation created; homepage migration to external assets remains pending a no-visual-change verification pass.
-- [ ] About — `about.html`.
+- [x] About — `about.html` — built and passed buyer + reviewer QA.
 - [ ] Services — `services.html`.
 - [ ] Service Detail — `service-detail.html`.
 - [ ] Industries — `industries.html`.
@@ -65,6 +65,11 @@ Before marking a page complete:
 3. Fix all issues found.
 4. Re-review the page after fixes.
 5. Only then mark the page complete and move to the next one.
+
+## Completed-page QA notes
+### About
+- Buyer pass: strong positioning, trust metrics, clear story, principles, differentiation, leadership, growth-stage narrative, and conversion CTA; content is useful for a real advisory business rather than filler.
+- Reviewer pass: shared design-system assets, semantic sections/headings, descriptive image alt text, minimum 14px type, SVG-only directional icons, consistent header/footer, responsive grids, reduced-motion support, strong dark/light contrast, and Elementor-friendly section/container structure.
 
 ## Final release gate
 Do not declare the kit complete until all pages exist, share the same design system, navigation between pages is coherent, responsive states are checked, minimum font-size rules are respected, no emoji arrows/icons remain, forms are visually stable, motion is consistent, and the entire kit has passed one final cross-page buyer + ThemeForest-reviewer audit.
