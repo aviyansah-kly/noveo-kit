@@ -112,3 +112,12 @@ h1,h2,h3,h4,p{margin-top:0}
 @media(max-width:980px){.grid-4{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}.section-head{grid-template-columns:1fr}.section-head>p{max-width:560px}.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>.newsletter-col{grid-column:1/-1;max-width:620px}.navlinks{display:none}}
 @media(max-width:700px){:root{--section:80px}.top .wrap{height:46px;padding:0 8px}.top-rotator{height:36px}.top-message{line-height:1.25}.nav{height:70px;gap:14px}.nav>.btn{min-height:42px;margin-left:auto;padding:0 15px;font-size:14px}.page-title{font-size:clamp(48px,14vw,64px)}.section-title{font-size:44px}.grid-4,.stat-row{grid-template-columns:1fr 1fr}.stat-row>div{min-height:96px;padding:20px 14px}.stat-row>div:nth-child(2){border-right:0}.stat-row>div:nth-child(-n+2){border-bottom:1px solid var(--line)}.stat-row>div:nth-child(3){padding-left:0}.form-grid{grid-template-columns:1fr}.form-grid .span-2{grid-column:auto}.footer-grid{grid-template-columns:1fr;gap:34px}.footer-grid>.newsletter-col{grid-column:auto;max-width:none}.foot-bottom{flex-direction:column;gap:14px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.highlight{background-size:100% .36em;transition:none}.top-message{transition:none}}
+
+
+.mobile-nav-toggle{display:none;width:42px;height:42px;border:1px solid var(--ink);border-radius:50%;background:transparent;color:var(--ink);align-items:center;justify-content:center;flex:none}
+.mobile-nav-toggle svg{width:18px;height:18px}
+.mobile-menu{display:none;position:absolute;left:0;right:0;top:100%;background:var(--cream);border-bottom:1px solid var(--line);padding:18px var(--pad) 24px;box-shadow:0 18px 30px rgba(0,0,0,.08)}
+.mobile-menu.open{display:grid;gap:4px}
+.mobile-menu a{display:flex;align-items:center;justify-content:space-between;min-height:46px;padding:0 4px;border-bottom:1px solid var(--line);font-size:15px;font-weight:700}
+.mobile-menu a:last-child{border-bottom:0}
+@media(max-width:980px){.mobile-nav-toggle{display:inline-flex}.header{position:sticky}.nav{position:relative}}
