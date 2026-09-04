@@ -1,8 +1,8 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
+  "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "noveo-kit",
   "compatibility_date": "2026-09-04",
   "assets": {
-    "directory": "."
+    "directory": "./public"
   }
 }
