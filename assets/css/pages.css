@@ -127,3 +127,59 @@
   .insights-page .value-card .link{margin-top:24px}
   .insights-page .cta-band{padding-top:72px}
 }
+
+
+/* Insights featured layout parity */
+.insights-page .people-grid{
+  overflow:hidden;
+  border:1px solid var(--ink);
+  border-radius:28px;
+  background:var(--white);
+  display:grid;
+  grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);
+  align-items:stretch;
+}
+.insights-page .people-photo{min-height:520px}
+.insights-page .people-photo img{height:100%;min-height:520px;object-fit:cover}
+.insights-page .quote{
+  padding:clamp(38px,5vw,62px);
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+}
+.insights-page .quote blockquote{
+  margin:24px 0 20px;
+  font:700 clamp(32px,3.7vw,52px)/1.07 'Plus Jakarta Sans',sans-serif;
+  letter-spacing:-.046em;
+}
+.insights-page .insight-feature>p{
+  margin:0;
+  font-size:16px;
+  line-height:1.7;
+  color:#555550;
+}
+.insights-page .insight-feature .insight-action{margin-top:36px}
+.insights-page .value-card>div{display:flex;flex-direction:column;flex:1;margin-top:28px}
+.insights-page .value-card p{margin:0}
+.insights-page .value-card .link{align-self:flex-start;margin-top:28px}
+.insights-page .section-white,
+.insights-page .section-cream,
+.insights-page .section-dark{padding-top:clamp(104px,9vw,144px);padding-bottom:clamp(104px,9vw,144px)}
+.insights-page .cta-band{padding:clamp(88px,8vw,124px) 0 var(--section)}
+.insights-page .cta-panel{display:block}
+.insights-page .cta-panel.reveal{opacity:1;transform:none}
+@media(max-width:980px){
+  .insights-page .people-grid{grid-template-columns:1fr}
+  .insights-page .people-photo,.insights-page .people-photo img{min-height:420px}
+}
+@media(max-width:700px){
+  .insights-page .people-photo,.insights-page .people-photo img{min-height:340px}
+  .insights-page .quote{padding:28px}
+  .insights-page .quote blockquote{font-size:34px;margin:20px 0 18px}
+  .insights-page .insight-feature .insight-action{margin-top:28px}
+  .insights-page .value-card .link{margin-top:24px}
+  .insights-page .section-white,
+  .insights-page .section-cream,
+  .insights-page .section-dark{padding-top:84px;padding-bottom:84px}
+  .insights-page .cta-band{padding-top:72px}
+}
