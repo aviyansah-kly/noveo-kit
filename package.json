@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
+    "postinstall": "rm -rf public && mkdir -p public && cp *.html public/ && cp -R assets public/assets",
     "deploy": "wrangler deploy"
   },
   "devDependencies": {
