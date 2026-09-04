@@ -31,10 +31,16 @@
 
 
 /* Insights */
+.insight-feature{display:flex;flex-direction:column;height:100%}
 .insight-feature blockquote{margin:22px 0 18px}
-.insight-feature>p{font-size:16px;line-height:1.7;color:#555550}
-.insight-feature .insight-action{margin-top:auto}
+.insight-feature>p{font-size:16px;line-height:1.7;color:#555550;margin-bottom:0}
+.insight-feature .insight-action{margin-top:32px}
+.value-card .link{margin-top:26px}
 .newsletter-wide{max-width:520px}
+.insights-page .page-hero{padding-bottom:clamp(88px,8vw,124px)}
+.insights-page .section:first-of-type{padding-top:clamp(112px,10vw,156px)}
+.insights-page .section + .section{padding-top:clamp(112px,10vw,156px)}
+.insights-page .cta-band{padding-top:clamp(96px,9vw,136px)}
 
 
 /* Article detail */
@@ -55,6 +61,10 @@
 
 
 /* FAQ */
+.faq-page .page-hero{padding-bottom:clamp(88px,8vw,124px)}
+.faq-page .section:first-of-type{padding-top:clamp(112px,10vw,156px)}
+.faq-page .section + .section{padding-top:clamp(112px,10vw,156px)}
+.faq-page .cta-band{padding-top:clamp(96px,9vw,136px)}
 .faq-list{border-top:1px solid var(--line)}
 .faq-item{border-bottom:1px solid var(--line)}
 .faq-item summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:24px 0;font:700 24px/1.15 'Plus Jakarta Sans',sans-serif;cursor:pointer}
