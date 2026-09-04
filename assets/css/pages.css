@@ -110,3 +110,20 @@
 .section-dark .faq-list{border-color:var(--line-dark)}
 .section-dark .faq-item{border-color:var(--line-dark)}
 .section-dark .faq-answer{color:var(--muted-dark)}
+
+
+/* Insights live-layout polish */
+.insights-page .people-grid{align-items:stretch}
+.insights-page .insight-feature{padding-top:4px}
+.insights-page .insight-feature>p{margin-bottom:0}
+.insights-page .insight-feature .insight-action{margin-top:38px}
+.insights-page .value-card>div{display:flex;flex-direction:column;flex:1;margin-top:28px}
+.insights-page .value-card p{margin-bottom:0}
+.insights-page .value-card .link{align-self:flex-start;margin-top:30px}
+.insights-page .cta-band{padding-top:clamp(88px,8vw,124px);padding-bottom:var(--section)}
+.insights-page .cta-panel.reveal{opacity:1;transform:none}
+@media(max-width:700px){
+  .insights-page .insight-feature .insight-action{margin-top:30px}
+  .insights-page .value-card .link{margin-top:24px}
+  .insights-page .cta-band{padding-top:72px}
+}
