@@ -66,3 +66,17 @@
     if (label === 'terms') link.setAttribute('href', 'terms.html');
   });
 })();
+
+document.querySelectorAll('.nav-group').forEach(group=>{
+  group.addEventListener('toggle',()=>{
+    if(!group.open)return;
+    document.querySelectorAll('.nav-group[open]').forEach(other=>{if(other!==group)other.removeAttribute('open')});
+  });
+});
+document.addEventListener('click',event=>{
+  if(event.target.closest('.nav-group'))return;
+  document.querySelectorAll('.nav-group[open]').forEach(group=>group.removeAttribute('open'));
+});
+document.addEventListener('keydown',event=>{
+  if(event.key==='Escape')document.querySelectorAll('.nav-group[open]').forEach(group=>group.removeAttribute('open'));
+});
