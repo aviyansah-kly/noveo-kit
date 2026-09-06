@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f176b" />
+  <title>Liputan6 Pantau — Prototype Gunung Api Indonesia</title>
+  <meta name="description" content="Prototype MVP Liputan6 Pantau untuk memantau status gunung api, sebaran abu, dampak wilayah, dan berita terkait." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="prototype-banner">PROTOTYPE • DATA SIMULASI UNTUK DEMO INTERNAL</div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Liputan6 Pantau">
+        <span class="brand-liputan">Liputan</span><span class="brand-six">6</span><span class="brand-sub">Pantau</span>
+      </a>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a class="active" href="#pantau">Gunung Api</a>
+        <a href="#berita">Berita</a>
+        <a href="#tentang">Tentang Data</a>
+      </nav>
+      <button class="icon-btn" id="menuBtn" aria-label="Buka menu">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="pantau">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">PANTAU INDONESIA</span>
+          <h1>Pantau gunung api.<br/>Pahami dampaknya.</h1>
+          <p class="hero-lead">Satu halaman untuk melihat status aktivitas, arah sebaran abu, kondisi angin, wilayah terdampak, dan berita terbaru—dirancang agar informasi penting lebih cepat dipahami.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#dashboard">Lihat kondisi terbaru</a>
+            <button class="btn ghost" id="locationBtn">⌖ Cek wilayah saya</button>
+          </div>
+          <div class="trust-row">
+            <span>Rancangan sumber data:</span>
+            <strong>PVMBG</strong><strong>VAAC</strong><strong>BMKG</strong><strong>GDACS</strong>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orbit orbit-1"></div><div class="orbit orbit-2"></div>
+          <div class="volcano-illustration">
+            <div class="ash ash-a"></div><div class="ash ash-b"></div><div class="ash ash-c"></div>
+            <svg viewBox="0 0 520 320" role="img" aria-label="Ilustrasi gunung api">
+              <defs>
+                <linearGradient id="mountain" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#27318f"/><stop offset="1" stop-color="#0f176b"/></linearGradient>
+              </defs>
+              <path d="M40 280 L175 104 L234 176 L300 68 L480 280 Z" fill="url(#mountain)"/>
+              <path d="M218 167 L300 68 L339 128 L313 118 L288 134 L268 119 Z" fill="#f7f8ff" opacity=".95"/>
+              <path d="M0 280 H520 V320 H0 Z" fill="#eef1ff"/>
+            </svg>
+            <div class="live-pill"><span></span> Monitoring concept</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dashboard-section" id="dashboard">
+      <div class="container">
+        <div class="section-head compact">
+          <div><span class="eyebrow">KONDISI TERKINI</span><h2 id="volcanoTitle">Gunung Anak Krakatau</h2></div>
+          <div class="updated"><span class="pulse-dot"></span><div><b>Simulasi diperbarui</b><br/><span id="updateTime">07 Sep 2026 • 04:00 WIB</span></div></div>
+        </div>
+
+        <div class="control-row">
+          <label class="select-box"><span>Pilih gunung</span><select id="volcanoSelect">
+            <option value="krakatau">Anak Krakatau</option>
+            <option value="merapi">Merapi</option>
+            <option value="semeru">Semeru</option>
+            <option value="lewotobi">Lewotobi Laki-laki</option>
+          </select></label>
+          <label class="select-box"><span>Wilayah pembanding</span><select id="citySelect">
+            <option value="jakarta">Jakarta</option>
+            <option value="bandarlampung">Bandar Lampung</option>
+            <option value="yogyakarta">Yogyakarta</option>
+            <option value="surabaya">Surabaya</option>
+            <option value="labuanbajo">Labuan Bajo</option>
+          </select></label>
+          <button class="btn dark" id="checkBtn">Cek dampak</button>
+        </div>
+
+        <div class="status-grid">
+          <article class="status-card primary-status">
+            <div class="card-label">Status aktivitas</div>
+            <div class="status-line"><span class="level-dot"></span><strong id="levelText">SIAGA — LEVEL III</strong></div>
+            <p id="statusDesc">Aktivitas vulkanik meningkat. Masyarakat diminta mengikuti rekomendasi radius aman dari otoritas resmi.</p>
+            <a href="#tentang">Lihat rekomendasi resmi →</a>
+          </article>
+          <article class="metric-card"><div class="metric-icon">↥</div><div><span>Ketinggian abu</span><strong id="ashHeight">± 15.000 ft</strong><small id="ashKm">± 4,6 km di atas permukaan laut</small></div></article>
+          <article class="metric-card"><div class="metric-icon">➜</div><div><span>Arah dominan</span><strong id="direction">Barat Daya</strong><small id="wind">Angin 18–24 km/jam</small></div></article>
+          <article class="metric-card"><div class="metric-icon">◷</div><div><span>Aktivitas terakhir</span><strong id="eventTime">03:42 WIB</strong><small id="eventDate">07 September 2026</small></div></article>
+        </div>
+
+        <div class="map-impact-grid">
+          <article class="map-card">
+            <div class="map-head">
+              <div><span class="card-label">PROYEKSI SEBARAN ABU</span><h3 id="mapTitle">Anak Krakatau • Selat Sunda</h3></div>
+              <div class="timeline-tabs" role="tablist"><button class="active" data-hour="0">Sekarang</button><button data-hour="6">+6 jam</button><button data-hour="12">+12 jam</button><button data-hour="18">+18 jam</button></div>
+            </div>
+            <div class="map-canvas">
+              <svg id="mapSvg" viewBox="0 0 900 520" role="img" aria-label="Simulasi peta sebaran abu">
+                <defs>
+                  <linearGradient id="sea" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f7f9ff"/><stop offset="1" stop-color="#e9eeff"/></linearGradient>
+                  <radialGradient id="ashGrad"><stop offset="0" stop-color="#5d637d" stop-opacity=".68"/><stop offset="1" stop-color="#7e849d" stop-opacity=".05"/></radialGradient>
+                </defs>
+                <rect width="900" height="520" fill="url(#sea)"/>
+                <path d="M0,60 C120,30 230,58 300,140 C345,193 331,245 300,312 C260,394 194,464 121,520 H0 Z" fill="#dce3c6"/>
+                <path d="M560,0 C603,80 607,151 579,214 C550,278 511,313 487,369 C465,421 468,468 490,520 H900 V0 Z" fill="#dce3c6"/>
+                <path d="M300,90 C370,117 423,142 475,159" fill="none" stroke="#c8cedf" stroke-width="2" stroke-dasharray="6 7"/>
+                <ellipse id="ashPlume" cx="430" cy="255" rx="215" ry="80" fill="url(#ashGrad)" transform="rotate(-18 430 255)"/>
+                <path id="ashCore" d="M382 282 C424 235 474 216 563 202 C514 246 484 276 416 311 Z" fill="#7f8290" opacity=".38"/>
+                <g id="volcanoMarker" transform="translate(386,318)"><circle r="23" fill="#fff"/><circle r="17" fill="#f4511e"/><path d="M-8 7 L0 -9 L9 7 Z" fill="white"/></g>
+                <g id="cityMarker" transform="translate(675,160)"><circle r="10" fill="#11184f" stroke="white" stroke-width="4"/><text x="18" y="6" class="map-label" id="cityMapLabel">Jakarta</text></g>
+                <text x="70" y="112" class="map-region">SUMATERA</text><text x="680" y="390" class="map-region">JAWA</text><text x="355" y="450" class="map-water">SELAT SUNDA</text>
+              </svg>
+              <div class="map-legend"><span><i class="legend volcano"></i>Gunung api</span><span><i class="legend ash"></i>Simulasi sebaran abu</span><span><i class="legend city"></i>Wilayah dipilih</span></div>
+              <div class="map-disclaimer">Visualisasi konseptual • bukan data operasional</div>
+            </div>
+          </article>
+
+          <aside class="impact-card" id="impactCard">
+            <span class="card-label">DAMPAK KE WILAYAH</span>
+            <div class="impact-city-row"><div><h3 id="impactCity">Jakarta</h3><p id="impactDistance">± 145 km dari area simulasi sebaran</p></div><span class="risk-pill low" id="riskPill">Risiko rendah</span></div>
+            <div class="impact-score"><span id="impactScore">12</span><small>/100</small><div><b>Indeks paparan simulasi</b><p>Gabungan jarak, arah angin, dan proyeksi plume.</p></div></div>
+            <div class="divider"></div>
+            <h4>Apa artinya untuk Anda?</h4>
+            <p id="impactMessage">Saat ini wilayah yang dipilih berada di luar arah utama sebaran simulasi. Tetap pantau informasi resmi bila kondisi berubah.</p>
+            <div class="advice-list" id="adviceList"><div>✓ Tidak ada tindakan khusus pada skenario ini</div><div>✓ Pantau kanal resmi PVMBG/BMKG</div><div>✓ Cek ulang bila arah angin berubah</div></div>
+            <button class="btn primary full" id="notifyBtn">Aktifkan notifikasi wilayah</button>
+            <p class="microcopy">Fitur notifikasi merupakan konsep MVP dan belum mengirim alert.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-section">
+      <div class="container why-grid">
+        <div><span class="eyebrow">KENAPA INI BERGUNA?</span><h2>Dari berita menjadi utility yang ingin dibuka kembali.</h2><p>Alih-alih berhenti setelah membaca satu artikel, pembaca punya alasan untuk kembali mengecek perubahan kondisi dan dampaknya ke wilayah mereka.</p></div>
+        <div class="journey-card"><span>Discovery</span><b>Google / Discover / Homepage</b><i>→</i><span>Context</span><b>Artikel erupsi Liputan6</b><i>→</i><span>Utility</span><b>Pantau kondisi & wilayah</b><i>→</i><span>Return</span><b>Update + artikel terbaru</b></div>
+      </div>
+    </section>
+
+    <section class="news-section" id="berita">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">BERITA TERKAIT</span><h2>Update terbaru untuk konteks lengkap</h2></div><a href="#">Lihat semua berita →</a></div>
+        <div class="news-grid">
+          <article class="news-card featured"><div class="news-image gradient-a"><span>UPDATE UTAMA</span></div><div class="news-body"><span class="category">News</span><h3>Status aktivitas Anak Krakatau meningkat, ini rekomendasi radius aman untuk warga</h3><p>Contoh integrasi artikel editorial dengan halaman pantauan untuk memberi konteks, rekomendasi, dan perkembangan terkini.</p><small>7 Sep 2026 • 10 menit lalu</small></div></article>
+          <article class="news-card"><div class="news-image gradient-b"></div><div class="news-body"><span class="category">Regional</span><h3>Memahami arah angin dan dampaknya pada sebaran abu vulkanik</h3><small>7 Sep 2026 • 28 menit lalu</small></div></article>
+          <article class="news-card"><div class="news-image gradient-c"></div><div class="news-body"><span class="category">Lifestyle</span><h3>Apa yang perlu disiapkan saat kualitas udara memburuk akibat abu?</h3><small>7 Sep 2026 • 45 menit lalu</small></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="data-section" id="tentang">
+      <div class="container data-wrap">
+        <div><span class="eyebrow">RANCANGAN DATA</span><h2>Lebih kredibel karena sumber dan freshness-nya terlihat.</h2></div>
+        <div class="source-list">
+          <div><b>PVMBG / MAGMA</b><span>Status aktivitas dan rekomendasi resmi gunung api Indonesia.</span></div>
+          <div><b>VAAC Darwin</b><span>Volcanic ash advisory, altitude, arah, dan forecast plume.</span></div>
+          <div><b>BMKG</b><span>Angin, cuaca, dan informasi atmosfer untuk konteks dampak.</span></div>
+          <div><b>GDACS</b><span>Cross-check event dan referensi kebencanaan global.</span></div>
+        </div>
+        <div class="data-note"><strong>Prinsip MVP:</strong> informasi keselamatan harus tetap merujuk sumber resmi. Liputan6 berperan menyederhanakan, memvisualisasikan, dan menghubungkan data dengan konteks editorial.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-wrap"><div class="brand footer-brand"><span class="brand-liputan">Liputan</span><span class="brand-six">6</span><span class="brand-sub">Pantau</span></div><p>Prototype internal • Product concept • September 2026</p></div></footer>
+
+  <div class="modal" id="modal" aria-hidden="true"><div class="modal-panel"><button class="modal-close" id="modalClose">×</button><span class="eyebrow">DEMO INTERAKSI</span><h3 id="modalTitle">Cek wilayah saya</h3><p id="modalText">Pada versi produksi, lokasi dapat dideteksi dengan izin pengguna atau dipilih manual untuk menghitung kedekatan terhadap area sebaran.</p><button class="btn primary full" id="modalOk">Mengerti</button></div></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
