@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "postinstall": "rm -rf public && mkdir -p public && cp *.html public/ && cp -R assets public/assets",
+    "postinstall": "rm -rf public && mkdir -p public && cp *.html public/ && cp -R assets public/assets && cp -R tft-norden public/tft-norden",
     "deploy": "wrangler deploy"
   },
   "devDependencies": {
